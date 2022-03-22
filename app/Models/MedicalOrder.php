@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class MedicalOrder extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'phone_number',
+        'name',
+        'governorate',
+        'amount',
+        'date_time',
+        'city',
+        'products',
+    ];
+}
